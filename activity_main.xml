@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="100dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edtTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="@color/purple_200" />
+
+    <Button
+        android:id="@+id/textHelloButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:onClick="onHelloButtonClicked"
+        android:text="Click on me!"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/teal_200" />
+
+    <TextView
+        android:id="@+id/textHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHelloButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Hello"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
